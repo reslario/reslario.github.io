@@ -1,0 +1,113 @@
+﻿.title {
+    margin-bottom: -2%;
+    margin-top: 10%;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    font-family: "Geosans Light";
+    letter-spacing: 4px;
+}
+
+.header-image {
+    background-image: url(../Images/Test/e459e1b3-7a59-4bd0-8ce3-502f72158b5f.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    margin-top: 10%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: auto;
+    background-color: #121212;
+}
+
+p {
+    margin-top: 5%;
+    font-family: "Poppins Regular";
+    font-size: 30px;
+    text-align: center;
+    color: #eeeeee;
+}
+
+.projects {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    width: 80%;
+    background-color: #121212;
+}
+
+.project {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 5% auto;
+    margin-bottom: 0;
+}
+
+.projtitle {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #eeeeee;
+    height: 80px;
+    width: 100%;
+    font-family: 'GlacialIndifference Regular';
+    font-size: 30px;
+}
+
+.projspecs {
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #eeeeee;
+    text-align: center;
+    font-family: 'Poppins Regular';
+    font-size: 20px;
+}
+
+.projimg {
+    height: 200px;
+}
+
+.projanim {
+    position: absolute;
+    z-index: 5;
+    background-image: url('../Images/Icons/arrow.svg');
+    background-size: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 75px;
+    top: 70px;
+    z-index: 1;
+    right: 125px;
+    opacity: 0;
+    transition: right 0.2s, opacity 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.project-link {
+    padding: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.project:hover > .projanim {
+    right: 50px;
+    opacity: 1;
+}

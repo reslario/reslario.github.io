@@ -1,0 +1,210 @@
+﻿html {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    background-color: #121212;
+}
+
+.wrapper {
+    box-shadow: 0 1px 20px black;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.title {
+    margin-top: 15%;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    font-family: "Geosans Light";
+    letter-spacing: 4px;
+}
+
+.header-image {
+    background-image: url('../Images/Backgrounds/header.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    height: 700px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.content {
+    position: relative;
+    background-color: #121212;
+    height: auto;
+    width: 100%;
+    margin-top: 15%;
+    z-index: 2;
+    overflow-y: hidden;
+}
+
+.bignav {
+    position: relative;
+    margin-top: 10%;
+    background-color: #121212;
+    height: 50vw;
+    width: 100%;
+    z-index: 3;
+    overflow-y: hidden;
+}
+
+.bignav-item {
+    position: absolute;
+    width: 20.83%;
+    height: 400px;
+    float: left;
+    background-size: 450px;
+    background-position: center;
+    transition: background-size 0.5s;
+}
+
+#maps {
+    margin-left: 9.4%;
+    background-image: url('../Images/Backgrounds/mapsbg.png');
+}
+
+#coding {
+    margin-left: 39.6%;
+    background-image: url('../Images/Backgrounds/codingbg.png');
+}
+
+#design {
+    margin-left: 69.8%;
+    background-image: url('../Images/Backgrounds/designbg.png');
+}
+
+.bignav-item:hover {
+    background-size: 400px;
+}
+
+.navdesc {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #eeeeee;
+    height: auto;
+    width: 100%;
+    font-family: "Poppins Medium";
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: 'GlacialIndifference Regular';
+}
+
+.navanim {
+    background-image: url('../Images/Icons/arrow.svg');
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 310px;
+    opacity: 0;
+    transition: top 0.2s, opacity 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.bignav-link {
+    padding: 350px 10.4vw 50px 10.4vw;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.bignav-item:hover .navanim {
+    top: 230px;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .wrapper {
+        height: 300vh;
+    }
+
+    .headernav {
+        font-size: 3vw;
+        line-height: 7.41vw;
+    }
+
+    header {
+        height: 7.41vw;
+    }
+
+    img.logo {
+        height: 5vw;
+    }
+
+    .title {
+        font-size: 8vw;
+    }
+
+    .bignav {
+        height: 2000px;
+    }
+
+    .navdesc {
+        font-size: 2vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    .bignav-item {
+        width: 48vw;
+        height: 48vw;
+        background-size: 52vw;
+    }
+
+        .bignav-item:hover {
+            background-size: 48vw;
+        }
+
+            .bignav-item:hover .navanim {
+                top: 57.5%;
+            }
+
+    .navanim {
+        background-size: 12vw;
+        height: 100px;
+        width: 100%;
+        top: 77.5%;
+    }
+
+    .bignav-link {
+        padding: 35vw 38.4vw 13vw 10.4vw;
+    }
+
+    #maps {
+        margin: 10% 0 0 26%;
+    }
+
+    #coding {
+        margin: 70% 0 0 26%;
+    }
+
+    #design {
+        margin: 130% 0 0 26%;
+    }
+}

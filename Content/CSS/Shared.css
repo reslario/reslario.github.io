@@ -1,0 +1,144 @@
+﻿@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('../Fonts/Poppins-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins ExtraLight';
+    src: url('../Fonts/Poppins-ExtraLight.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../Fonts/Poppins-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins Light';
+    src: url('../Fonts/Poppins-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Geosans Light';
+    src: url('../Fonts/GeosansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GlacialIndifference Regular';
+    src: url('../Fonts/GlacialIndifference-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('../Fonts/Poppins-Regular.otf') format('opentype');
+}
+
+::selection {
+    background-color: var(--accent);
+}
+
+body {
+    background-color: #121212;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 7.41vh;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+    background-color: #121212;
+    box-shadow: 0 1px 20px black;
+}
+
+.logo {
+    margin: 0;
+    margin-left: 10%;
+    float: left;
+    height: 7vh;
+}
+
+.homelink {
+    z-index: 5;
+}
+
+.headernav {
+    margin-top: 0;
+    float: right;
+    right: 0;
+    list-style-type: none;
+    color: white;
+    font-family: "GlacialIndifference Regular";
+    font-size: 30px;
+    line-height: 7.41vh;
+    width: 17em;
+}
+
+.headernav-item {
+    display: inline-block;
+    text-align: center;
+    width: 5em;
+}
+
+.navlink {
+    color: inherit;
+    padding-bottom: 11%;
+    padding-top: 11%;
+    text-decoration: none;
+    z-index: 5;
+}
+
+    .navlink:hover .navicon {
+        color: lightgray;
+        filter: brightness(0.8);
+    }
+
+    .navlink:hover {
+        color: lightgray;
+    }
+
+img.navicon {
+    height: 30px;
+    width: 20%;
+    vertical-align: middle;
+    margin: 0;
+}
+
+footer {
+    height: 40vh;
+    width: 100vw;
+    background-image: url('../Images/Backgrounds/footerbg.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.footer-content {
+    position: absolute;
+    margin-top: 9%;
+    width: 50vw;
+    margin-left: 25vw;
+    text-align: center;
+    line-height: 4vw;
+    color: white;
+    font-family: "Poppins Regular";
+    font-size: 1.8vw;
+    background-color: rgba(0, 255, 255, 0.25);
+}
+
+@media only screen and (max-width: 850px) {
+
+    .headernav {
+        font-size: 3vw;
+        line-height: 7.41vw;
+    }
+
+    header {
+        height: 7.41vw;
+    }
+
+    img.logo {
+        height: 5vw;
+    }
+}

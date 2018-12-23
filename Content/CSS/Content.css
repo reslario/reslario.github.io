@@ -1,0 +1,83 @@
+﻿.downloadbutton:focus {
+    outline: none;
+}
+
+.downloadbutton {
+    display: inline-block;
+    margin-left: 25%;
+    margin-bottom: 2.5%;
+    width: 13.7%;
+    height: 3.9vw;
+    line-height: 3.9vw;
+    font-family: 'GlacialIndifference Regular';
+    font-size: 1.8vw;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--bg);
+    background-color: var(--accent);
+    box-shadow: 6px 6px 0px #0c0c0c;
+    border: none;
+    border-radius: 999px;
+    text-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0;
+    transition: background-image, font-size 0.25s, background-size 0.5s;
+}
+
+#src {
+    float: right;
+    margin-left: 0;
+    margin-right: 25%;
+}
+
+.downloadbutton:hover {
+    background-image: url('../Images/Icons/darrow.svg');
+    background-size: 5.2vw;
+    font-size: 0;
+}
+
+p, h2 {
+    text-align: justify;
+    align-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 0;
+    font-family: 'Poppins Regular';
+    font-size: 21px;
+    color: #eeeeee;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'GlacialIndifference Regular';
+}
+
+.textlink {
+    text-decoration: none;
+    color: var(--accent);
+    filter: brightness(0.8);
+}
+
+@media only screen and (max-width: 600px) {
+
+    p {
+        font-size: 2.5vw;
+        line-height: 1.5em;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+}
+
+img {
+    max-width: 77.5%;
+    margin-right: 10%;
+    margin-left: 11.5%;
+    margin-top: 5%;
+    margin-bottom: 50px;
+}

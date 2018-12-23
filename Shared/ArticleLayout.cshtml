@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<style>
+    :root {
+        --accent: @ViewBag.accent;
+    }
+</style>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/CSS/Shared.css" rel="stylesheet" />
+    <link href="~/Content/CSS/ArticleLayout.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a class="homelink" href="/Home/Index">
+            <img class="logo" src="~/Content/Images/Icons/logo.png" />
+        </a>
+        <ul class="headernav">
+            <li class="headernav-item">
+                <a class="navlink" href="#">
+                    <img class="navicon" src="~/Content/Images/Icons/maps.svg" />
+                    Maps
+                </a>
+            </li>
+            <li class="headernav-item">
+                <a class="navlink" href="#">
+                    <img class="navicon" src="~/Content/Images/Icons/coding.svg" />
+                    Coding
+                </a>
+            </li>
+            <li class="headernav-item">
+                <a class="navlink" href="#">
+                    <img class="navicon" src="~/Content/Images/Icons/design.svg" />
+                    Design
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="wrapper">
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            Website and content created by Simon "reslario" Kunze
+        </div>
+    </footer>
+</body>
+</html>
