@@ -25,7 +25,7 @@ body {
     color: white;
     font-size: 80px;
     text-align: center;
-    font-family: "Geosans Light";
+    font-family: "GlacialIndifference Regular";
     letter-spacing: 4px;
 }
 
@@ -140,19 +140,6 @@ h3 {
 
     .wrapper {
         height: 300vh;
-    }
-
-    .headernav {
-        font-size: 3vw;
-        line-height: 7.41vw;
-    }
-
-    header {
-        height: 7.41vw;
-    }
-
-    img.logo {
-        height: 5vw;
     }
 
     .title {

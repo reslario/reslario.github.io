@@ -16,7 +16,7 @@
     text-decoration: none;
     color: #121212;
     background-color: var(--acc);
-    box-shadow: 6px 6px 0px #0c0c0c;
+    box-shadow: 6px 6px 0px #0a0a0a;
     border: none;
     border-radius: 999px;
     text-shadow: none;
@@ -36,6 +36,15 @@
     background-image: url('../Images/Icons/darrow.svg');
     background-size: 5.2vw;
     font-size: 0;
+}
+
+.content-image {
+    max-width: 77.5%;
+    margin-right: 10%;
+    margin-left: 11.5%;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    box-shadow: 8px 8px #0a0a0a;
 }
 
 p, h2 {
@@ -60,6 +69,12 @@ h2 {
     text-decoration: none;
     color: var(--acc);
     filter: brightness(0.8);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.textlink:hover {
+    background-color: var(--acc);
+    color: #eeeeee;
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,12 +87,4 @@ h2 {
     h2 {
         font-size: 5vw;
     }
-}
-
-img {
-    max-width: 77.5%;
-    margin-right: 10%;
-    margin-left: 11.5%;
-    margin-top: 5%;
-    margin-bottom: 50px;
 }

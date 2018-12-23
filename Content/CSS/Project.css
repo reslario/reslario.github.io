@@ -17,6 +17,16 @@
     border-left: 2px solid;
     border-right: 2px solid;
     border-image: linear-gradient(to bottom, var(--acc), #121212) 1 100%;
+    animation: 1s slide-in;
+}
+
+@keyframes slide-in {
+  0% {
+    padding-top: 100vh;
+  }
+  100% {
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width: 850px) {
