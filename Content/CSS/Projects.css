@@ -9,7 +9,6 @@
 }
 
 .header-image {
-    background-image: url(../Images/Test/e459e1b3-7a59-4bd0-8ce3-502f72158b5f.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
     width: 100%;
@@ -20,6 +19,18 @@
     bottom: 0;
     left: 0;
     z-index: -1;
+}
+
+#coding {
+    background-image: url(../Images/Backgrounds/codingwide.png);
+}
+
+#maps {
+  background-image: url(../Images/Backgrounds/mapswide.png);
+}
+
+#design {
+  background-image: url(../Images/Backgrounds/designwide.png);
 }
 
 .content {
@@ -33,6 +44,7 @@
 
 p {
     margin-top: 5%;
+    padding-top: 5%;
     font-family: "Poppins Regular";
     font-size: 30px;
     text-align: center;

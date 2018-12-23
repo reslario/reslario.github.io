@@ -14,8 +14,8 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: var(--bg);
-    background-color: var(--accent);
+    color: #121212;
+    background-color: var(--acc);
     box-shadow: 6px 6px 0px #0c0c0c;
     border: none;
     border-radius: 999px;
@@ -58,7 +58,7 @@ h2 {
 
 .textlink {
     text-decoration: none;
-    color: var(--accent);
+    color: var(--acc);
     filter: brightness(0.8);
 }
 

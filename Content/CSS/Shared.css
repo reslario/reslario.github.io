@@ -34,7 +34,7 @@
 }
 
 ::selection {
-    background-color: var(--accent);
+    background-color: var(--acc);
 }
 
 body {
@@ -58,6 +58,7 @@ header {
     margin-left: 10%;
     float: left;
     height: 7vh;
+    filter: var(--acr);
 }
 
 .homelink {
@@ -92,7 +93,7 @@ header {
 
     .navlink:hover .navicon {
         color: lightgray;
-        filter: brightness(0.8);
+        filter: var(--acr) brightness(0.8);
     }
 
     .navlink:hover {
@@ -104,6 +105,7 @@ img.navicon {
     width: 20%;
     vertical-align: middle;
     margin: 0;
+    filter: var(--acr);
 }
 
 footer {
@@ -124,7 +126,7 @@ footer {
     color: white;
     font-family: "Poppins Regular";
     font-size: 1.8vw;
-    background-color: rgba(0, 255, 255, 0.25);
+    background-color: var(--aca);
 }
 
 @media only screen and (max-width: 850px) {
