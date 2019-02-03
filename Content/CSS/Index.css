@@ -55,17 +55,20 @@ body {
 
 .bignav {
     position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
     margin-top: 10%;
     background-color: #121212;
-    height: 50vw;
+    height: auto;
     width: 100%;
     z-index: 3;
     overflow-y: hidden;
 }
 
 .bignav-item {
-    position: absolute;
-    width: 20.83%;
+    position: relative;
+    margin: 5% auto;
+    width: 400px;
     height: 400px;
     float: left;
     background-size: 450px;
@@ -74,17 +77,14 @@ body {
 }
 
 #maps {
-    margin-left: 9.4%;
     background-image: url('../Images/Backgrounds/mapsbg.png');
 }
 
 #coding {
-    margin-left: 39.6%;
     background-image: url('../Images/Backgrounds/codingbg.png');
 }
 
 #design {
-    margin-left: 69.8%;
     background-image: url('../Images/Backgrounds/designbg.png');
 }
 
@@ -138,16 +138,8 @@ h3 {
 
 @media only screen and (max-width: 850px) {
 
-    .wrapper {
-        height: 300vh;
-    }
-
     .title {
         font-size: 8vw;
-    }
-
-    .bignav {
-        height: 2000px;
     }
 
     .navdesc {
@@ -169,29 +161,17 @@ h3 {
         }
 
             .bignav-item:hover .navanim {
-                top: 57.5%;
+                top: 25vw;
             }
 
     .navanim {
         background-size: 12vw;
         height: 100px;
         width: 100%;
-        top: 77.5%;
+        top: 35vw;
     }
 
     .bignav-link {
         padding: 35vw 38.4vw 13vw 10.4vw;
-    }
-
-    #maps {
-        margin: 10% 0 0 26%;
-    }
-
-    #coding {
-        margin: 70% 0 0 26%;
-    }
-
-    #design {
-        margin: 130% 0 0 26%;
     }
 }
