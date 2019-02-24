@@ -1,3 +1,20 @@
 [
-    
+    {
+        "title":"schulNetz Dark",
+        "image":"sndark.jpg",
+        "specs":"Stylesheet",
+        "short":"schulnetzdark"
+    },
+    {
+        "title":"Flat phpMyAdmin",
+        "image":"flatphp.jpg",
+        "specs":"Stylesheet",
+        "short":"flatphpmyadmin"
+    },
+    {
+        "title":"Nicer Twitter",
+        "image":"nicertwit.jpg",
+        "specs":"Stylesheet",
+        "short":"nicertwitter"
+    }
 ]

@@ -1,8 +1,14 @@
 [
     {
-        "title":"Epic Coding Project",
-        "image":"ecp.jpg",
-        "specs":"Python Game Engine",
-        "short":"epicodingproject"
+        "title":"MooDL",
+        "image":"moodl.jpg",
+        "specs":"C# Tool",
+        "short":"moodl"
+    },
+    {
+        "title":"Simple Project Manager",
+        "image":"spm.jpg",
+        "specs":"Java Tool",
+        "short":"simpleprojectmanager"
     }
 ]
