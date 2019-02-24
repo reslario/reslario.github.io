@@ -29,7 +29,7 @@ function fetchTemplate() {
             fetchedResource();
         }
     }
-    request.open("GET", "project.html", true); 
+    request.open("GET", "../shared/project.html", true); 
     request.send();
 }
 
