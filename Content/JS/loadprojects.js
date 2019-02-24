@@ -9,15 +9,18 @@ function loadProjects(category) {
 }
 
 function buildProjects() {
-    var template = document.createElement("template"); 
-    template.content = templateHtml;
+    var parent = document.getElementsByClassName("projects")[0];
     for (var i = 0; i < projects.length; i++) {
-        var element = template.cloneNode(true); 
-        element.childNodes[1].textContent.replace("title", projects[i].title);
-        element.childNodes[2].src.replace("pbg.jpg", projects[i].image);
-        element.childNodes[3].textContent.replace("specs", projects[i].specs);
-        element.childNodes[4].href.replace("category", category).replace("short", projects[i].short);
-        document.getElementsByClassName("projects")[0].appendChild(element);
+        var div = document.createElement("div");
+        div.classList.add("project");
+        var projectHtml = templateHtml
+                            .replace("$title", projects[i].title)
+                            .replace("$image", projects[i].image)
+                            .replace("$specs", projects[i].specs)
+                            .replace("$category", category)
+                            .replace("$short", projects[i].short);
+        div.innerHTML = projectHtml;
+        parent.appendChild(div);
     }
 }
 
@@ -46,6 +49,10 @@ function fetchProjects() {
 }
 
 function fetchedResource() {
-    if (templateHtml != null && projects != null)
+    if (templateHtml != null && projects != null) {
         buildProjects();
+        templateHtml = null;
+        projects = null;
+    }
+        
 }
