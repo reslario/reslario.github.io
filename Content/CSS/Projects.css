@@ -80,7 +80,7 @@ p {
     font-size: 30px;
 }
 
-.projtitle p {
+.projtitle span {
     display: table-cell;
     vertical-align: center;
 }
