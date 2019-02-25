@@ -68,6 +68,22 @@ p {
     margin-bottom: 0;
 }
 
+.project:hover {
+    animation: glow 0.5s cubic-bezier(0.95, 0.05, 0.45, 1.1);
+}
+
+@keyframes glow {
+    0% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.1);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+
 .projtitle {
     position: absolute;
     display: table;
@@ -101,31 +117,9 @@ p {
     height: 200px;
 }
 
-.projanim {
-    position: absolute;
-    z-index: 5;
-    background-image: url('../Images/Icons/arrow.svg');
-    background-size: 75px;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 75px;
-    top: 70px;
-    z-index: 1;
-    right: 125px;
-    opacity: 0;
-    transition: right 0.2s, opacity 0.2s;
-    transition-timing-function: ease-out;
-}
-
 .projlink {
     padding: 100px;
     position: absolute;
     top: 0;
     z-index: 5;
-}
-
-.project:hover > .projanim {
-    right: 50px;
-    opacity: 1;
 }
