@@ -70,6 +70,7 @@ p {
 
 .projtitle {
     position: absolute;
+    display: table;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     color: #eeeeee;
@@ -77,6 +78,11 @@ p {
     width: 100%;
     font-family: 'GlacialIndifference Regular';
     font-size: 30px;
+}
+
+.projtitle p {
+    display: table-cell;
+    vertical-align: center;
 }
 
 .projspecs {
