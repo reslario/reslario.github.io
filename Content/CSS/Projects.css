@@ -82,7 +82,7 @@ p {
 
 .projtitle span {
     display: table-cell;
-    vertical-align: center;
+    vertical-align: middle;
 }
 
 .projspecs {
