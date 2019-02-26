@@ -66,22 +66,11 @@ p {
     float: left;
     margin: 5% auto;
     margin-bottom: 0;
+	transition: filter 0.5s;
 }
 
 .project:hover {
-    animation: glow 0.5s cubic-bezier(0.95, 0.05, 0.45, 1.1);
-}
-
-@keyframes glow {
-    0% {
-        filter: brightness(1);
-    }
-    50% {
-        filter: brightness(1.25);
-    }
-    100% {
-        filter: brightness(1);
-    }
+    filter: brightness(1.25);
 }
 
 .projtitle {
