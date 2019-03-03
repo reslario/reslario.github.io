@@ -10,7 +10,8 @@ function buildProjects() {
     let parent = document.getElementsByClassName("projects")[0];
     projects.forEach(p => {
         let div = document.createElement("div");
-        div.outerHTML = templateHtml
+        div.classList.add("project");
+        div.innerHTML = templateHtml
                             .replace("$title", p.title)
                             .replace("$image", p.image)
                             .replace("$specs", p.specs)
@@ -40,7 +41,7 @@ function fetchProjects() {
             fetchedResource();
         }
     }
-    request.open("GET", category + ".json", true); 
+    request.open("GET", this.category + ".json", true); 
     request.send();
 }
 
