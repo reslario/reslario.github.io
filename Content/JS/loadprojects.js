@@ -1,4 +1,4 @@
-let templateHtml, projects, category;
+let templateHtml, projects;
 
 function loadProjects(category) {
     this.category = category;
