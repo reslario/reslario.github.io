@@ -80,7 +80,7 @@ header {
         color: lightgray;
     }
 
-img.navicon {
+.navicon {
     height: 30px;
     width: 20%;
     vertical-align: middle;
@@ -96,17 +96,29 @@ footer {
     background-size: 100%;
 }
 
-.footer-content {
+.footer-content, .footer-contact {
     position: absolute;
-    margin-top: 10%;
-    width: 50vw;
-    margin-left: 25vw;
     text-align: center;
     line-height: 4vw;
     color: white;
     font-family: "Poppins Regular";
     font-size: 1.8vw;
     background-color: var(--aca);
+}
+
+.footer-content {
+    margin-top: 10%;
+    width: 50vw;
+    margin-left: 25vw;
+}
+
+.footer-contact {
+    margin-top: 15%;
+    width: 10vw;
+    margin-left: 45vw;
+    text-decoration: none;
+    border: 1px solid;
+    border-image: linear-gradient(0deg, var(--acc), rgba(0, 0, 0, 0)) 1;
 }
 
 @media only screen and (max-width: 850px) {
@@ -140,5 +152,13 @@ footer {
     .footer-content {
         font-size: 4vw;
         line-height: 4.5vw;
+        margin-top: 8%;
+    }
+
+    .footer-contact {
+        margin-top: 23%;
+        margin-left: 41%;
+        font-size: 4vw;
+        width: 18vw;
     }
 }
