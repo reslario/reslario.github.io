@@ -1,7 +1,7 @@
-let templateHtml, projects;
+let templateHtml, projects, category;
 
-function loadProjects(category) {
-    this.category = category;
+function loadProjects(projectCategory) {
+    category = projectCategory;
     fetchTemplate();
     fetchProjects();
 }
