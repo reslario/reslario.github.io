@@ -1,6 +1,4 @@
-var templateHtml;
-var projects;
-var category;
+let templateHtml, projects, category;
 
 function loadProjects(category) {
     this.category = category;
@@ -9,35 +7,33 @@ function loadProjects(category) {
 }
 
 function buildProjects() {
-    var parent = document.getElementsByClassName("projects")[0];
-    for (var i = 0; i < projects.length; i++) {
-        var div = document.createElement("div");
-        div.classList.add("project");
-        var projectHtml = templateHtml
-                            .replace("$title", projects[i].title)
-                            .replace("$image", projects[i].image)
-                            .replace("$specs", projects[i].specs)
+    let parent = document.getElementsByClassName("projects")[0];
+    projects.forEach(p => {
+        let div = document.createElement("div");
+        div.outerHTML = templateHtml
+                            .replace("$title", p.title)
+                            .replace("$image", p.image)
+                            .replace("$specs", p.specs)
                             .replace("$category", category)
-                            .replace("$short", projects[i].short);
-        div.innerHTML = projectHtml;
+                            .replace("$short", p.short);
         parent.appendChild(div);
-    }
+    });
 }
 
 function fetchTemplate() {
-    var request = new XMLHttpRequest();
+    let request = new XMLHttpRequest();
     request.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             templateHtml = this.responseText;
             fetchedResource();
         }
     }
-    request.open("GET", "../shared/project.html", true); 
+    request.open("GET", "/shared/project.html", true); 
     request.send();
 }
 
 function fetchProjects() {
-    var request = new XMLHttpRequest(); 
+    let request = new XMLHttpRequest(); 
     request.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             projects = JSON.parse(this.responseText);
@@ -49,7 +45,7 @@ function fetchProjects() {
 }
 
 function fetchedResource() {
-    if (templateHtml != null && projects != null) {
+    if (templateHtml && projects) {
         buildProjects();
         templateHtml = null;
         projects = null;
