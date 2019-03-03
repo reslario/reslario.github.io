@@ -41,7 +41,7 @@ function fetchProjects() {
             fetchedResource();
         }
     }
-    request.open("GET", this.category + ".json", true); 
+    request.open("GET", category + ".json", true); 
     request.send();
 }
 
