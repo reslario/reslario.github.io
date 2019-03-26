@@ -35,7 +35,7 @@ header {
 
 .logo {
     margin: 0;
-    margin-left: 10%;
+    margin-left: 8%;
     float: left;
     height: 7vh;
     filter: var(--acr);
@@ -54,6 +54,7 @@ header {
     font-family: "GlacialIndifference Regular";
     font-size: 30px;
     line-height: 7.41vh;
+    padding: 0;
 }
 
 .headernav-item {
