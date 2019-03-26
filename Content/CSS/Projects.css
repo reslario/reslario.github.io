@@ -128,5 +128,10 @@ p {
 
     .title {
         font-size: 15vw;
+        margin-top: 15%;
+    }
+
+    .header-image {
+        top: 15vw;
     }
 }
