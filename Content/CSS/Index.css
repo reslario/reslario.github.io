@@ -72,6 +72,8 @@ body {
     width: 400px;
     height: 400px;
     float: left;
+    border-radius: 50px;
+    overflow: hidden;
     background-size: 450px;
     background-position: center;
     transition: background-size 0.5s;
