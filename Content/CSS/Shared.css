@@ -110,6 +110,7 @@ footer {
     margin-top: 10%;
     width: 50vw;
     margin-left: 25vw;
+    border-radius: 100rem;
 }
 
 .footer-contact {
@@ -117,8 +118,8 @@ footer {
     width: 10vw;
     margin-left: 45vw;
     text-decoration: none;
-    border: 1px solid;
-    border-image: linear-gradient(0deg, var(--acc), rgba(0, 0, 0, 0)) 1;
+    border-radius: 100rem;
+    border: 5px solid #00000055;
 }
 
 @media only screen and (max-width: 850px) {
