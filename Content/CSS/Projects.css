@@ -77,6 +77,8 @@ p {
     float: left;
     margin: 5% auto;
     margin-bottom: 0;
+    border-radius: 25px;
+    overflow: hidden;
 	transition: filter 0.5s;
 }
 
