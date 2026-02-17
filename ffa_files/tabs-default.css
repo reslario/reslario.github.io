@@ -1,0 +1,162 @@
+.tabs-default {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs-default .tab-labels {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs-default .tab-labels > label {
+  cursor: pointer;
+}
+.tabs-default > input {
+  position: absolute;
+  left: -9999px;
+}
+.tabs-default > .tab-content {
+  width: 100%;
+}
+.tabs-default > .tab-content > .tab-content-wrapper {
+  display: none;
+}
+.tabs-default > input:nth-of-type(1):checked ~ .tab-labels > label:nth-of-type(1) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(1):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(1) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(1):disabled ~ .tab-labels > label:nth-of-type(1):not(.tabs-default > input:nth-of-type(1):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(1):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(1) {
+  display: none;
+}
+.tabs-default > input:nth-of-type(2):checked ~ .tab-labels > label:nth-of-type(2) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(2):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(2) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(2):disabled ~ .tab-labels > label:nth-of-type(2):not(.tabs-default > input:nth-of-type(2):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(2):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(2) {
+  display: none;
+}
+.tabs-default > input:nth-of-type(3):checked ~ .tab-labels > label:nth-of-type(3) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(3):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(3) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(3):disabled ~ .tab-labels > label:nth-of-type(3):not(.tabs-default > input:nth-of-type(3):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(3):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(3) {
+  display: none;
+}
+.tabs-default > input:nth-of-type(4):checked ~ .tab-labels > label:nth-of-type(4) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(4):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(4) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(4):disabled ~ .tab-labels > label:nth-of-type(4):not(.tabs-default > input:nth-of-type(4):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(4):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(4) {
+  display: none;
+}
+.tabs-default > input:nth-of-type(5):checked ~ .tab-labels > label:nth-of-type(5) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(5):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(5) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(5):disabled ~ .tab-labels > label:nth-of-type(5):not(.tabs-default > input:nth-of-type(5):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(5):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(5) {
+  display: none;
+}
+.tabs-default > input:nth-of-type(6):checked ~ .tab-labels > label:nth-of-type(6) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(6):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(6) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(6):disabled ~ .tab-labels > label:nth-of-type(6):not(.tabs-default > input:nth-of-type(6):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(6):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(6) {
+  display: none;
+}
+.tabs-default > input:nth-of-type(7):checked ~ .tab-labels > label:nth-of-type(7) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(7):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(7) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(7):disabled ~ .tab-labels > label:nth-of-type(7):not(.tabs-default > input:nth-of-type(7):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(7):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(7) {
+  display: none;
+}
+.tabs-default > input:nth-of-type(8):checked ~ .tab-labels > label:nth-of-type(8) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(8):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(8) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(8):disabled ~ .tab-labels > label:nth-of-type(8):not(.tabs-default > input:nth-of-type(8):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(8):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(8) {
+  display: none;
+}
+.tabs-default > input:nth-of-type(9):checked ~ .tab-labels > label:nth-of-type(9) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(9):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(9) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(9):disabled ~ .tab-labels > label:nth-of-type(9):not(.tabs-default > input:nth-of-type(9):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(9):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(9) {
+  display: none;
+}
+.tabs-default > input:nth-of-type(10):checked ~ .tab-labels > label:nth-of-type(10) {
+  background-color: #fefefe;
+  border-bottom: 3px solid brown;
+}
+.tabs-default > input:nth-of-type(10):checked ~ .tab-content > .tab-content-wrapper:nth-of-type(10) {
+  display: contents;
+}
+.tabs-default > input:nth-of-type(10):disabled ~ .tab-labels > label:nth-of-type(10):not(.tabs-default > input:nth-of-type(10):disabled > label-hide) {
+  cursor: no-drop;
+}
+.tabs-default > input:nth-of-type(10):disabled ~ .tab-labels > .hide-if-disabled:nth-of-type(10) {
+  display: none;
+}
+.tabs-default .tab-labels {
+  gap: 1em;
+}
+.tabs-default .tab-labels > label {
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+  padding: 0.5rem;
+  color: #4e4e4e;
+  border-bottom: 3px solid #fefefe;
+}
