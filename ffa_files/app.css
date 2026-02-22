@@ -2484,6 +2484,8 @@
 }
 :root {
   font-family: 'Roboto';
+  font-size: 12pt;
+  --film-width: 14em;
 }
 .root-element {
   width: 66vw;
@@ -2536,6 +2538,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   row-gap: 2em;
+  justify-content: space-between;
 }
 .screenings, .films {
   height: 90vh;
@@ -2544,19 +2547,32 @@ footer {
 .films {
   padding: 0.5rem;
 }
-.screening {
+.film {
   display: flex;
   flex-direction: column;
-  width: 14em;
   padding: 1em;
   .title {
-    height: 3ch;
-    text-wrap: wrap;
+    overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
   }
+  @supports not (-webkit-line-clamp: 3) {
+    .title {
+      height: 4.5em;
+      overflow: hidden;
+    }
+  }
+  @supports (-webkit-line-clamp: 3) or (line-clamp: 3) {
+    .title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
   .details {
-    font-size: 13pt;
     font-family: 'Bahnschrift';
     display: flex;
     justify-content: space-between;
@@ -2564,10 +2580,6 @@ footer {
 }
 .poster {
   max-height: 20em;
-}
-.date-text {
-  font-size: 20pt;
-  font-family: 'Bahnschrift';
 }
 .top {
   display: flex;
@@ -2617,6 +2629,10 @@ footer {
   }
 }
 @media (max-aspect-ratio: 1) {
+  :root {
+    --film-width: 40%;
+    font-size: 24pt;
+  }
   .root-element {
     width: 90vw;
   }
@@ -2627,7 +2643,20 @@ footer {
     margin: 5% auto;
   }
   .signboard p span.letter {
-    font-size: 2.5vw;
+    font-size: 3vw;
+  }
+  .poster {
+    max-height: 30em;
+  }
+  .date-text {
+    font-size: 20pt;
+  }
+  header {
+    .burger {
+      >ul {
+        right: 2em;
+      }
+    }
   }
 }
 @property --tw-translate-x {

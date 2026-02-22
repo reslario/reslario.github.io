@@ -169,8 +169,9 @@
   border-radius: 10px;
 }
 .tabs-date .tab-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--film-width));
+  grid-gap: 1em;
   padding-bottom: 2em;
+  justify-content: space-around;
 }
