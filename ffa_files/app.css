@@ -2482,6 +2482,10 @@
     }
   }
 }
+@font-face {
+  font-family: Bahnschrift;
+  src: url(./public/fonts/BAHNSCHRIFT.TTF);
+}
 :root {
   font-family: 'Roboto';
   font-size: 12pt;
@@ -2534,23 +2538,20 @@ footer {
   margin: auto;
 }
 .films {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 2em;
-  justify-content: space-between;
-}
-.screenings, .films {
   height: 90vh;
   overflow-y: scroll;
-}
-.films {
   padding: 0.5rem;
+}
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--film-width));
+  grid-gap: 1em;
+  padding-bottom: 2em;
+  justify-content: space-around;
 }
 .film {
   display: flex;
   flex-direction: column;
-  padding: 1em;
   .title {
     overflow: hidden;
     text-overflow: ellipsis;
